@@ -1,160 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>ZenithPHP Framework Documentation</title>
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Official documentation for the ZenithPHP framework. A simple and powerful PHP framework."
+    />
+    <meta name="author" content="Dasun Nethsara" />
+    <meta name="title" content="Zenith Framework" />
+    <meta name="og:title" content="Zenith Framework" />
+    <meta
+      name="og:keywords"
+      content="zenithphp, php, php8, php-framework, ZenithPHP Zenith PHP, Zenith PHP, Dasun Nethsara, DasunNethsara-04, new framework, new php framework"
+    />
 
-<head>
-  <title>ZenithPHP Framework Documentation</title>
-  <!-- Meta -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="Official documentation for the ZenithPHP framework. A simple and powerful PHP framework." />
-  <meta name="author" content="Dasun Nethsara" />
-  <meta name="title" content="Zenith Framework" />
-  <meta name="og:title" content="Zenith Framework" />
-  <meta name="og:keywords"
-    content="zenithphp, php, php8, php-framework, ZenithPHP Zenith PHP, Zenith PHP, Dasun Nethsara, DasunNethsara-04, new framework, new php framework" />
+    <link rel="shortcut icon" href="./assets/images/web/icon-192.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- FontAwesome JS -->
+    <script defer src="assets/fontawesome/js/all.js"></script>
+    <!-- Global CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/plugins/bootstrap/css/bootstrap.min.css"
+    />
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/plugins/elegant_font/css/style.css" />
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css" />
+  </head>
 
+  <body class="landing-page">
+    <!-- GITHUB BUTTON JS -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <div class="page-wrapper">
+      <!-- ******Header****** -->
+      <header class="header text-center">
+        <div class="container">
+          <div class="branding">
+            <h1 class="logo">
+              <span class="text-highlight">Zenith</span
+              ><span class="text-bold">PHP</span>
+            </h1>
+          </div>
+          <!--//branding-->
+          <div class="tagline">
+            <p>A simple and powerful PHP framework for developers</p>
+            <p>
+              Designed with <i class="fas fa-heart"></i> for simplicity and
+              flexibility
+            </p>
+          </div>
+          <!--//tagline-->
 
-  <link rel="shortcut icon" href="./assets/images/web/icon-192.png" />
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
-    rel="stylesheet" type="text/css" />
-  <!-- FontAwesome JS -->
-  <script defer src="assets/fontawesome/js/all.js"></script>
-  <!-- Global CSS -->
-  <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css" />
-  <!-- Plugins CSS -->
-  <link rel="stylesheet" href="assets/plugins/elegant_font/css/style.css" />
-  <!-- Theme CSS -->
-  <link id="theme-style" rel="stylesheet" href="assets/css/styles.css" />
-</head>
+          <div class="main-search-box pt-3 pb-4 d-inline-block">
+            <form
+              class="form-inline search-form justify-content-center"
+              action=""
+              method="get"
+            ></form>
+          </div>
 
-<body class="landing-page">
-  <!-- GITHUB BUTTON JS -->
-  <script async defer src="https://buttons.github.io/buttons.js"></script>
-  <div class="page-wrapper">
-    <!-- ******Header****** -->
-    <header class="header text-center">
-      <div class="container">
-        <div class="branding">
-          <h1 class="logo">
-            <span class="text-highlight">Zenith</span><span class="text-bold">PHP</span>
-          </h1>
-        </div>
-        <!--//branding-->
-        <div class="tagline">
-          <p>A simple and powerful PHP framework for developers</p>
-          <p>
-            Designed with <i class="fas fa-heart"></i> for simplicity and
-            flexibility
-          </p>
-        </div>
-        <!--//tagline-->
-
-        <div class="main-search-box pt-3 pb-4 d-inline-block">
-          <form class="form-inline search-form justify-content-center" action="" method="get">
-            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input" />
-            <button type="submit" class="btn search-btn" value="Search">
-              <i class="fas fa-search"></i>
-            </button>
-          </form>
-        </div>
-
-        <div class="social-container">
-          <!-- Replace with your Github Button -->
-          <div class="github-btn mb-2">
-            <a class="github-button" href="https://github.com/ZenithPHP-Framework/full-zenith-framework"
-              data-size="large" aria-label="Star xriley/PrettyDocs-Theme on GitHub">Star</a>
-            <a class="github-button" href="https://github.com/ZenithPHP-Framework" data-size="large"
-              aria-label="Follow @xriley on GitHub">Follow @ZenithPHP-Framework</a>
+          <div class="social-container">
+            <!-- Replace with your Github Button -->
+            <div class="github-btn mb-2">
+              <a
+                class="github-button"
+                href="https://github.com/ZenithPHP-Framework/full-zenith-framework"
+                data-size="large"
+                aria-label="Star xriley/PrettyDocs-Theme on GitHub"
+                >Star</a
+              >
+              <a
+                class="github-button"
+                href="https://github.com/ZenithPHP-Framework"
+                data-size="large"
+                aria-label="Follow @xriley on GitHub"
+                >Follow @ZenithPHP-Framework</a
+              >
+            </div>
           </div>
         </div>
         <!--//container-->
-    </header>
-    <!--//header-->
-    <section class="cards-section text-center">
-      <div class="container">
-        <h2 class="title">Getting Started with ZenithPHP</h2>
-        <div class="intro">
-          <p>
-            Welcome to the official documentation for ZenithPHP. Get started
-            quickly with our simple setup guide and explore the core
-            components and features of this PHP framework.
-          </p>
-          <div class="cta-container">
-            <a class="btn btn-primary btn-cta" href="https://github.com/ZenithPHP-Framework/full-zenith-framework"
-              target="_blank"><i class="fas fa-cloud-download-alt"></i> Download ZenithPHP</a>
+      </header>
+      <!--//header-->
+      <section class="cards-section text-center">
+        <div class="container">
+          <h2 class="title">Getting Started with ZenithPHP</h2>
+          <div class="intro">
+            <p>
+              Welcome to the official documentation for ZenithPHP. Get started
+              quickly with our simple setup guide and explore the core
+              components and features of this PHP framework.
+            </p>
+            <div class="cta-container">
+              <a
+                class="btn btn-primary btn-cta"
+                href="https://github.com/ZenithPHP-Framework/full-zenith-framework"
+                target="_blank"
+                ><i class="fas fa-cloud-download-alt"></i> Download ZenithPHP</a
+              >
+            </div>
+            <!--//cta-container-->
           </div>
-          <!--//cta-container-->
-        </div>
-        <!--//intro-->
+          <!--//intro-->
 
-        <!-- Documentation Cards -->
-        <div id="cards-wrapper" class="cards-wrapper row">
-          <div class="item item-green col-lg-4 col-6">
-            <div class="item-inner">
-              <div class="icon-holder">
-                <i class="icon fa fa-paper-plane"></i>
+          <!-- Documentation Cards -->
+          <div id="cards-wrapper" class="cards-wrapper row">
+            <div class="item item-green col-lg-4 col-6">
+              <div class="item-inner">
+                <div class="icon-holder">
+                  <i class="icon fa fa-paper-plane"></i>
+                </div>
+                <!--//icon-holder-->
+                <h3 class="title">Quick Start</h3>
+                <p class="intro">Get started with setting up ZenithPHP.</p>
+                <a class="link" href="start.html"><span></span></a>
               </div>
-              <!--//icon-holder-->
-              <h3 class="title">Quick Start</h3>
-              <p class="intro">Get started with setting up ZenithPHP.</p>
-              <a class="link" href="start.html"><span></span></a>
+              <!--//item-inner-->
             </div>
-            <!--//item-inner-->
-          </div>
-          <!--//item-->
-          <div class="item item-pink item-2 col-lg-4 col-6">
-            <div class="item-inner">
-              <div class="icon-holder">
-                <span aria-hidden="true" class="icon icon_puzzle_alt"></span>
+            <!--//item-->
+            <div class="item item-pink item-2 col-lg-4 col-6">
+              <div class="item-inner">
+                <div class="icon-holder">
+                  <span aria-hidden="true" class="icon icon_puzzle_alt"></span>
+                </div>
+                <!--//icon-holder-->
+                <h3 class="title">Core Components</h3>
+                <p class="intro">Explore controllers, models, and more.</p>
+                <a class="link" href="components.html"><span></span></a>
               </div>
-              <!--//icon-holder-->
-              <h3 class="title">Core Components</h3>
-              <p class="intro">Explore controllers, models, and more.</p>
-              <a class="link" href="components.html"><span></span></a>
+              <!--//item-inner-->
             </div>
-            <!--//item-inner-->
-          </div>
-          <!--//item-->
-          <div class="item item-blue col-lg-4 col-6">
-            <div class="item-inner">
-              <div class="icon-holder">
-                <span aria-hidden="true" class="icon icon_datareport_alt"></span>
+            <!--//item-->
+            <div class="item item-blue col-lg-4 col-6">
+              <div class="item-inner">
+                <div class="icon-holder">
+                  <span
+                    aria-hidden="true"
+                    class="icon icon_datareport_alt"
+                  ></span>
+                </div>
+                <!--//icon-holder-->
+                <h3 class="title">Database Migrations</h3>
+                <p class="intro">
+                  Learn about database migrations in ZenithPHP.
+                </p>
+                <a class="link" href="migrations.html"><span></span></a>
               </div>
-              <!--//icon-holder-->
-              <h3 class="title">Database Migrations</h3>
-              <p class="intro">
-                Learn about database migrations in ZenithPHP.
-              </p>
-              <a class="link" href="migrations.html"><span></span></a>
+              <!--//item-inner-->
             </div>
-            <!--//item-inner-->
+            <!--//item-->
           </div>
-          <!--//item-->
+          <!--//cards-->
         </div>
-        <!--//cards-->
+        <!--//container-->
+      </section>
+      <!--//cards-section-->
+    </div>
+    <!--//page-wrapper-->
+
+    <footer class="footer text-center">
+      <div class="container">
+        <small class="copyright"
+          >Developed with <i class="fas fa-heart"></i> by
+          <a href="https://github.com/DasunNethsara-04" target="_blank"
+            >Dasun Nethsara</a
+          ></small
+        >
       </div>
       <!--//container-->
-    </section>
-    <!--//cards-section-->
-  </div>
-  <!--//page-wrapper-->
+    </footer>
+    <!--//footer-->
 
-  <footer class="footer text-center">
-    <div class="container">
-      <small class="copyright">Developed with <i class="fas fa-heart"></i> by
-        <a href="https://github.com/DasunNethsara-04" target="_blank">Dasun Nethsara</a></small>
-    </div>
-    <!--//container-->
-  </footer>
-  <!--//footer-->
-
-  <!-- Main Javascript -->
-  <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-  <script src="assets/plugins/stickyfill/dist/stickyfill.min.js"></script>
-  <script src="assets/js/main.js"></script>
-</body>
-
+    <!-- Main Javascript -->
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/plugins/stickyfill/dist/stickyfill.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
