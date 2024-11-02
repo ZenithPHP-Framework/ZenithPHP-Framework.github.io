@@ -19,6 +19,8 @@
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
     rel="stylesheet" type="text/css" />
+  <!-- Prism.js CSS for styling -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" />
   <!-- FontAwesome JS -->
   <script defer src="assets/fontawesome/js/all.js"></script>
   <!-- Global CSS -->
@@ -175,7 +177,7 @@
                   </p>
                   <div class="code-block">
                     <h6>CLI Command</h6>
-                    <pre><code class="language-bash"  style="color: darkcyan;">php cli make:controller WelcomeController</code></pre>
+                    <pre><code class="language-bash">php cli make:controller WelcomeController</code></pre>
                   </div>
                   <p>
                     This command will create a new file named
@@ -185,7 +187,7 @@
                   </p>
                   <div class="code-block">
                     <h6>Example Code</h6>
-                    <pre><code class="language-php" style="color: white; width: 100%;">&lt;?php
+                    <pre><code class="language-php" style="width: 100%;">&lt;?php
 namespace App\Controllers;
 
 use ZenithPHP\Core\Controller\Controller;
@@ -213,7 +215,7 @@ class WelcomeController extends Controller
                   </p>
                   <div class="code-block">
                     <h6>Route Example</h6>
-                    <pre><code class="language-php" style="color: white; width: 100%;">use ZenithPHP\Core\Http\Router;
+                    <pre><code class="language-php" style=" width: 100%;">use ZenithPHP\Core\Http\Router;
 
 // Define a route to your controller’s action
 Router::get('/welcome', 'WelcomeController', 'index');</code></pre>
@@ -226,7 +228,7 @@ Router::get('/welcome', 'WelcomeController', 'index');</code></pre>
                   <p>To create a new model, use the command below:</p>
                   <div class="code-block">
                     <h6>CLI Command</h6>
-                    <pre><code class="language-bash"  style="color: darkcyan;">php cli make:model User</code></pre>
+                    <pre><code class="language-bash">php cli make:model User</code></pre>
                   </div>
                   <p>
                     This command generates a <code>User.php</code> file in the
@@ -235,7 +237,7 @@ Router::get('/welcome', 'WelcomeController', 'index');</code></pre>
                   </p>
                   <div class="code-block">
                     <h6>Example Code</h6>
-                    <pre><code class="language-php" style="color: white; width: 100%;">&lt;?php
+                    <pre><code class="language-php" style=" width: 100%;">&lt;?php
 namespace App\Models;
 
 use ZenithPHP\Core\Database\Model;
@@ -257,7 +259,7 @@ class User extends Model
                   </p>
                   <div class="code-block">
                     <h6>CLI Command</h6>
-                    <pre><code class="language-bash"  style="color: darkcyan;">php cli make:migration users</code></pre>
+                    <pre><code class="language-bash">php cli make:migration users</code></pre>
                   </div>
                   <p>
                     Save your migration files in the
@@ -266,7 +268,7 @@ class User extends Model
                   </p>
                   <div class="code-block">
                     <h6>Example Migration</h6>
-                    <pre><code class="language-php" style="color: white; width: 100%;">&lt;?php
+                    <pre><code class="language-php" style=" width: 100%;">&lt;?php
 use ZenithPHP\Core\Database\Migration;
 use ZenithPHP\Core\Database\Schema;
 
@@ -310,7 +312,7 @@ class _2024_10_27_174853_users extends Migration
                   </p>
                   <div class="code-block">
                     <h6>Example Route Definition</h6>
-                    <pre><code class="language-php"  style="color: white; width: 100%;">
+                    <pre><code class="language-php"  style=" width: 100%;">
 use ZenithPHP\Core\Http\Router;
 Router::get('/api/users', 'UserController', 'index');
     </code></pre>
@@ -323,7 +325,7 @@ Router::get('/api/users', 'UserController', 'index');
                   </p>
                   <div class="code-block">
                     <h6>Create a Model</h6>
-                    <pre><code class="language-bash"  style="color: darkcyan;">
+                    <pre><code class="language-bash">
 php cli make:model User
     </code></pre>
                   </div>
@@ -333,7 +335,7 @@ php cli make:model User
                   </p>
                   <div class="code-block">
                     <h6>Define the User Model</h6>
-                    <pre><code class="language-php" style="color: white; width: 100%;">
+                    <pre><code class="language-php" style=" width: 100%;">
 use ZenithPHP\Core\Model\Model;
 
 class User extends Model
@@ -362,7 +364,7 @@ php cli make:controller UserController
                   </p>
                   <div class="code-block">
                     <h6>Controller Implementation</h6>
-                    <pre><code class="language-php" style="color: white; width: 100%;">
+                    <pre><code class="language-php" style=" width: 100%;">
 use ZenithPHP\Core\Controller\Controller;
 use ZenithPHP\Core\Http\Response;
 use ZenithPHP\Core\Http\Request;
@@ -438,7 +440,7 @@ class UserController extends Controller
                   </p>
                   <div class="code-block">
                     <h6>Example: AuthMiddleware</h6>
-                    <pre><code class="language-php" style="color: white; width: 100%;">
+                    <pre><code class="language-php" style=" width: 100%;">
 namespace ZenithPHP\App\Middleware;
 
 use ZenithPHP\Core\Http\Request;
@@ -484,7 +486,7 @@ class AuthMiddleware extends Middleware
                   </p>
                   <div class="code-block">
                     <h6>Example Usage</h6>
-                    <pre><code class="language-php" style="color: white; width: 100%;">
+                    <pre><code class="language-php" style=" width: 100%;">
 Router::get('/dashboard', 'DashboardController', 'index')->only('auth');
 Router::get('/admin', 'AdminController', 'index')->only('auth:admin');
     </code></pre>
@@ -498,7 +500,7 @@ Router::get('/admin', 'AdminController', 'index')->only('auth:admin');
                 <!-- Pluto Template Engine Section -->
                 <div id="pluto-engine" class="section-block">
                   <h3 class="block-title">Introduction to Pluto Template Engine | <span
-                      class="badge text-bg-success">Added in v2.0</h3>
+                      class="badge text-bg-success">Added in v2.0</span></h3>
                   <p>
                     The <strong>Pluto</strong> template engine in ZenithPHP allows you to easily build dynamic views
                     with clean and readable syntax. It’s designed to simplify templating and enhance the readability of
@@ -515,15 +517,21 @@ Router::get('/admin', 'AdminController', 'index')->only('auth:admin');
                     <li><strong>Variable Output:</strong> Use <code>&lt;&lt; $variable &gt;&gt;</code> to output PHP
                       variables in the view.</li>
                     <li><strong>Conditional Statements:</strong> Pluto offers <code>@if</code>, <code>@elseif</code>,
-                      <code>@else</code>, and <code>@endif</code> directives for conditional rendering.</li>
+                      <code>@else</code>, and <code>@endif</code> directives for conditional rendering.
+                    </li>
                     <li><strong>Looping:</strong> Use <code>@foreach</code> and <code>@endforeach</code> to iterate over
                       collections.</li>
+                    <li><strong>PHP Code:</strong> Use <code>@php</code> and <code>@endphp</code> to include raw PHP
+                      code.</li>
+                    <li><strong>Sections and Yields:</strong> Use <code>@section</code> and <code>@yield</code> for
+                      layout management.</li>
+                    <li><strong>Comments:</strong> Use <code>&lt;&lt; // comment text &gt;&gt;</code> for comments.</li>
                   </ul>
 
                   <h4>Pluto Engine Tags</h4>
                   <div class="code-block">
                     <h6>Example Syntax</h6>
-                    <pre><code class="language-php" style="color: white; width: 100%;">
+                    <pre><code class="language-php" style="width: 100%;">
 &lt;!-- Displaying a variable --&gt;
 &lt;&lt; $username &gt;&gt;
 
@@ -540,8 +548,36 @@ Router::get('/admin', 'AdminController', 'index')->only('auth:admin');
 @foreach ($items as $item)
   &lt;p&gt;&lt;&lt; $item-&gt;name &gt;&gt; - &lt;&lt; $item-&gt;price &gt;&gt;&lt;/p&gt;
 @endforeach
-    </code></pre>
+
+&lt;!-- Using PHP Code --&gt;
+@php
+  $count = count($items);
+@endphp
+<p>Total items: &lt;&lt; $count &gt;&gt;</p>
+
+&lt;!-- Defining Sections and Yields --&gt;
+@section('content')
+  &lt;p&gt;This is the main content area.&lt;/p&gt;
+@endsection
+
+@yield('content')  &lt;!-- Where the content will be injected --&gt;
+
+&lt;!-- Pluto Comment --&gt;
+&lt;&lt; // This is a comment that won't be rendered &gt;&gt;
+        </code></pre>
                   </div>
+
+                  <h4>Getting Started with Pluto</h4>
+                  <p>
+                    To create a new view using the Pluto template engine, follow these steps:
+                  </p>
+                  <ol>
+                    <li>Navigate to the <strong>View</strong> folder in the root directory of your ZenithPHP project.
+                    </li>
+                    <li>Create a new file and name it <code>home.pluto.php</code> (you can replace
+                      <code>home</code> with your desired filename).</li>
+                    <li>In the newly created file, you can start using the Pluto syntax to build your view.</li>
+                  </ol>
 
                   <h4>Using Pluto Engine in Views</h4>
                   <p>
@@ -550,7 +586,7 @@ Router::get('/admin', 'AdminController', 'index')->only('auth:admin');
                   </p>
                   <div class="code-block">
                     <h6>Example Usage</h6>
-                    <pre><code class="language-php" style="color: white; width: 100%;">
+                    <pre><code class="language-php" style="width: 100%;">
 class HomeController extends Controller 
 {
     public function index(Request $request, Response $response)
@@ -565,7 +601,7 @@ class HomeController extends Controller
         ]);
     }
 }
-    </code></pre>
+        </code></pre>
                   </div>
 
                   <h4>Benefits of Using Pluto</h4>
@@ -668,6 +704,8 @@ class HomeController extends Controller
   <script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script>
   <script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>
   <script src="assets/js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
 </body>
 
 </html>
