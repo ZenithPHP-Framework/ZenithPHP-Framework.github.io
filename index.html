@@ -35,6 +35,35 @@
     <link rel="stylesheet" href="assets/plugins/elegant_font/css/style.css" />
     <!-- Theme CSS -->
     <link id="theme-style" rel="stylesheet" href="assets/css/styles.css" />
+    <style>
+      .release-announcement {
+        background-color: #f8f9fa;
+        border-top: 2px solid #00bcd4;
+        border-bottom: 2px solid #00bcd4;
+      }
+      .release-title {
+        font-size: 2rem;
+        color: #333;
+      }
+      .release-description {
+        font-size: 1.1rem;
+        color: #555;
+        max-width: 700px;
+        margin: 0 auto;
+      }
+      .release-features {
+        list-style: none;
+        padding: 0;
+        color: #777;
+      }
+      .release-features li {
+        font-size: 1rem;
+        margin: 0.5rem 0;
+      }
+      .cta-container .btn-cta {
+        margin: 0.5rem;
+      }
+    </style>
   </head>
 
   <body class="landing-page">
@@ -90,6 +119,33 @@
         </div>
         <!--//container-->
       </header>
+      <section class="release-announcement text-center py-5">
+        <div class="container">
+          <h2 class="release-title mb-3">ZenithPHP v2.0 Released</h2>
+          <p class="release-description">
+            We’re excited to announce the release of
+            <strong>ZenithPHP v2.0</strong>, packed with new features to enhance
+            your development experience. Enjoy improved performance, enhanced
+            security, and new CLI tools designed to streamline your workflow.
+          </p>
+          <ul class="release-features mt-4">
+            <li>⚡ Faster and optimized performance</li>
+            <li>🔐 Advanced middleware for access control</li>
+            <li>🛠 Built-in CLI commands for rapid setup</li>
+            <li>🌐 API support for building RESTful applications</li>
+          </ul>
+          <div class="cta-container mt-4">
+            <a
+              class="btn btn-outline-secondary btn-cta"
+              href="./start.html"
+              target="_self"
+            >
+              <i class="fas fa-book"></i> View Documentation
+            </a>
+          </div>
+        </div>
+      </section>
+
       <!--//header-->
       <section class="cards-section text-center">
         <div class="container">
